@@ -90,8 +90,12 @@
       <h2>Why a database for NLP applications?</h2>
       <div>NucliaDB is a high performance database that enables you to save time by exploring text datasets with visual search and text retrieval, and lets you improve the interpretability of your models. Specifically focused on NLP applications, NucliaDB is a distributed production-ready database that scales.</div>
       <div class="install">
-        <h3 class="install-title">Install NucliaDB locally with one command:</h3>
-        <code>curl --proto '=https' --tlsv1.2 -sSf https://sh.nucliadb.com | sh</code>
+        <h3 class="install-title">Install NucliaDB locally easily:</h3>
+        <code>pip install nucliadb </code><br />
+        <code>nucliadb --maindb ./main --blob ./blob --node ./node --log=INFO</code><br />
+      </div>
+      <div class="install">
+        <code>docker run -P -e LOG=INFO -it nuclia/nucliadb:latest </code><br />
       </div>
     </div>
   </div>
