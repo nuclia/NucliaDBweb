@@ -2,6 +2,7 @@
 <html dir="ltr" lang="en-US">
 <head>
   <!-- Google tag (gtag.js) -->
+  <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Z88XTPFEB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,98 +16,144 @@
     gtag('config', 'G-3Z88XTPFEB');
 
   </script>
+  -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-  <title>Search Svelte Summit Talks with Nuclia</title>
+  <title>NucliaDB</title>
 
   <meta name="description"
-        content="Learn from Svelte and everything that is happening in the community. Search inside videos from Svelte Summit 2020 and 2021"/>
+        content="NucliaDB is the database for data-scientists and developers looking to improve the interpretability of their models"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Nuclia - Build AI-powered search engines using the Nuclia API"/>
+  <meta property="og:site_name" content="NucliaDB - The database for HuggingFace users willing to improve interpretability"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Search Svelte Conference Talks with Nuclia"/>
+  <meta property="og:title" content="NucliaDB - The database for HuggingFace users willing to improve interpretability"/>
   <meta property="og:description"
-        content="Learn from Svelte and everything that is happening in the community. Search inside videos from Svelte Summit 2020 and 2021"/>
+        content="NucliaDB is the database for data-scientists and developers looking to improve the interpretability of their models"/>
   <meta property="og:image" content="https://nuclia.com/wp-content/uploads/2021/12/logo.png"/>
   <meta property="og:image:secure_url" content="https://nuclia.com/wp-content/uploads/2021/12/logo.png"/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@nuclia_"/>
-  <meta name="twitter:title" content="Search Svelte Summit Talks with Nuclia"/>
+  <meta name="twitter:title" content="NucliaDB - The database for HuggingFace users willing to improve interpretability"/>
   <meta name="twitter:description"
-        content="Learn from Svelte and everything that is happening in the community. Search inside videos from Svelte Summit 2020 and 2021"/>
+        content="NucliaDB is the database for data-scientists and developers looking to improve the interpretability of their models"/>
   <meta name="twitter:creator" content="@nucliaAI"/>
   <meta name="twitter:image" content="https://nuclia.com/wp-content/uploads/2021/12/logo.png"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
   <link rel='stylesheet' href='./css/variables.css' media='all'/>
   <link rel='stylesheet' href='./css/normalize.css' media='all'/>
   <link rel='stylesheet' href='./css/main.css' media='all'/>
 
-  <script src="https://cdn.nuclia.cloud/nuclia-video-widget.umd.js"></script>
+  <script src="./js/main.js"></script>
 
   <link rel="icon" href="https://nuclia.com/wp-content/uploads/2021/12/favicon_nuclia.png" sizes="32x32"/>
   <link rel="icon" href="https://nuclia.com/wp-content/uploads/2021/12/favicon_nuclia.png" sizes="192x192"/>
 </head>
 
 <body>
-<div class="main-container">
+<div class="top-bar">
   <div class="container">
-    <header class="header">
-      <div class="year">2020</div>
-      <div class="logo">
-        <img width="152" src="assets/svelte-logo.svg" alt="Svelte">
+    <div class="top-bar-content">
+      <img src="./assets/logo.png" class="logo-small" alt="NucliaDB">
+      <div class="links">
+        <a class="link light" href="https://github.com/nuclia/nucliadb">
+          <img class="link-icon" src="./assets/github.png">
+          <span class="hidden-mobile">Star us on</span>&nbsp;<span>GitHub</span>
+        </a>
+        <a class="link" href="https://nuclia.cloud/user/signup"><span>Join</span>&nbsp;<span class="hidden-mobile"> NucliaDB cloud waitlist</span></a>
       </div>
-      <div class="year">2021</div>
-    </header>
-
-    <section class="title">
-      <h1>Learn from Svelte and everything that is happening in the community</h1>
-      <h2>Search <b>inside videos</b> from Svelte Summit 2020 and 2021 and <b>jump directly</b> to the relevant part of
-        that talk.</h2>
-    </section>
-  </div>
-  <div class="demo-area">
-    <div class="container">
-      <section class="search">
-        <nuclia-search-bar zone="europe-1"
-                           knowledgebox="878d31cd-3943-45ea-927a-c7c987edf7da"
-                           lang="en"
-                           zone="europe-1"
-                           widgetid="dashboard"
-                           placeholder="Video search"></nuclia-search-bar>
-      </section>
-
-      <section class="search-results">
-        <nuclia-search-results></nuclia-search-results>
-      </section>
-
-      <section class="promo">
-        <div class="try-nuclia">
-          <h3>Like what you see?</h3>
-          <div>
-            <a href="https://nuclia.com/">Try Nuclia for your own project</a>
-          </div>
-        </div>
-        <div class="description">
-          <p>Nuclia is an AI-powered semantic search engine that indexes any unstructured content like video, audio,
-            slide decks… and everything else. Written in Rust.</p>
-        </div>
-      </section>
     </div>
   </div>
 </div>
 
+<section class="header">
+  <div class="container">
+    <div class="header-content">
+      <img src="./assets/logo.png" alt="NucliaDB">
+      <h1>The database for HuggingFace users willing to improve interpretability.</h1>
+      <div class="summary">Built to store text, paragraphs, embedded content, entities, tags and relations in a single database, NucliaDB is the database for data-scientists and developers looking to improve the interpretability of their models.</div>
+    </div>
+    <video class="header-background hidden-mobile" autoplay loop muted>
+      <source src="./assets/video.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="details">
+  <div class="container">
+    <div class="details-content">
+      <h2>Why a database for NLP applications?</h2>
+      <div>NucliaDB is a high performance database that enables you to save time by exploring text datasets with visual search and text retrieval, and lets you improve the interpretability of your models. Specifically focused on NLP applications, NucliaDB is a distributed production-ready database that scales.</div>
+      <div class="install">
+        <h3 class="install-title">Install NucliaDB locally with one command:</h3>
+        <code>curl --proto '=https' --tlsv1.2 -sSf https://sh.nucliadb.com | sh</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Data storage for NLP</h2>
+        <p>NucliaDB is a database capable of indexing text, paragraphs, entities, embedded content and relations, taking specific care of the needs of data scientists. Upload your dataset to NucliaDB easily by using Nuclia’s <i>nuclia_client</i> API</p>
+        <ul>
+          <li>Text & Paragraphs</li>
+          <li>Embeddings</li>
+          <li>Relations</li>
+          <li>Entitites</li>
+        </ul>
+      </div>
+      <div class="feature-image">
+        <img src="./assets/feature1.png">
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Store as many preprocessed datasets as you want</h2>
+        <p>NucliaDB can store multiple versions of preprocessed data to help you find out which is the best for your machine learning model.</p>
+      </div>
+      <div class="feature-image">
+        <img src="./assets/feature2.png">
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Explore datasets in a visual way</h2>
+        <p>Run searches on text, embedded content and relations thanks to a visual search box to discover content.</p>
+      </div>
+      <div class="feature-image">
+        <img src="./assets/feature3.png">
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-text">
+        <h2>Add interpretability to your HuggingFace models</h2>
+        <p>Once the model is trained, upload your predictions to NucliaDB. Apply your favourite interpretability tools and check your conclusions by querying your corpus interactively.</p>
+        <img src="./assets/hf-x-nuclia.png" alt="HuggingFace X Nuclia">
+      </div>
+      <div class="feature-image">
+        <img class="hidden-mobile" src="./assets/feature4.png">
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="footer">
-  <div class="powered-by">AI-Powered Video Search by</div>
-  <a href="https://nuclia.com">
-    <img src="./assets/footer-logo.svg" alt="Nuclia">
-  </a>
+  <div class="container">
+    <div class="footer-content">
+      <a href="https://nuclia.com">
+        <img src="./assets/footer-logo.svg" alt="Nuclia">
+      </a>
+      <div class="powered-by"><strong>nucliadb</strong> is a product by <a href="https://nuclia.com">nuclia.com</a></div>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
