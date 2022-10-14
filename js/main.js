@@ -1,10 +1,10 @@
 
 window.addEventListener('load', function () {
   document.addEventListener('scroll', throttle(() => {
-    var topBar = document.querySelector('.top-bar');
-    var header = document.querySelector('.header');
-    var isTopBarActive = topBar.classList.contains('active');
-    var isBelowHeader = window.scrollY > header.clientHeight;
+    let topBar = document.querySelector('.top-bar');
+    let header = document.querySelector('.header');
+    let isTopBarActive = topBar.classList.contains('active');
+    let isBelowHeader = window.scrollY > (header.clientHeight - topBar.clientHeight);
     if (!isBelowHeader &&  isTopBarActive) {
       topBar.classList.remove('active');
     }
@@ -18,16 +18,16 @@ window.addEventListener('load', function () {
 
 // from underscore.js
 function throttle(func, wait) {
-  var context, args, timeout, result;
-  var previous = 0;
-  var later = function() {
+  let context, args, timeout, result;
+  let previous = 0;
+  let later = function() {
     previous = new Date;
     timeout = null;
     result = func.apply(context, args);
   };
   return function() {
-    var now = new Date;
-    var remaining = wait - (now - previous);
+    let now = new Date;
+    let remaining = wait - (now - previous);
     context = this;
     args = arguments;
     if (remaining <= 0) {
@@ -40,4 +40,4 @@ function throttle(func, wait) {
     }
     return result;
   };
-};
+}
