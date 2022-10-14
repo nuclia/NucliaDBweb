@@ -4,7 +4,9 @@ window.addEventListener('load', function () {
     let topBar = document.querySelector('.top-bar');
     let header = document.querySelector('.header');
     let isTopBarActive = topBar.classList.contains('active');
-    let isBelowHeader = window.scrollY > (header.clientHeight - topBar.clientHeight);
+    let isBelowHeader = topBar.clientWidth < 768
+      ? window.scrollY > 0
+      : window.scrollY > (header.clientHeight - topBar.clientHeight);
     if (!isBelowHeader &&  isTopBarActive) {
       topBar.classList.remove('active');
     }
